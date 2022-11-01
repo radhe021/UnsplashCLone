@@ -14,14 +14,26 @@
 	border-left: 1px solid rgb(185, 187, 185);
 	height: 30px;
 }
+.myNav {
+	max-height: 100px;
+	max-width: 70vw;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	font-weight: 500;
+	font-size: 14px;
+	white-space: nowrap;
+}
+.nav-link {
+	scroll-snap-align: start;
+}
 sup {
 	top: -1.5em !important;
-	left: 51px !important;
+	left: 47px !important;
 }
 .search-form {
 	width: 58vw;
 }
-.food_drink_item{
+.food_drink_item {
 	margin-left: -70px;
 }
 .submit-img-btn {

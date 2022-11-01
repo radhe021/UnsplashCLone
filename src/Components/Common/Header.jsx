@@ -6,7 +6,6 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 function Header() {
 	return (
@@ -77,8 +76,16 @@ function Header() {
 					<Navbar.Toggle aria-controls="navbarScroll" />
 					<Navbar.Collapse id="navbarScroll">
 						<Nav
-							className="me-auto my-2 my-lg-0"
-							style={{ maxHeight: "100px" }}
+							className="me-auto my-2 my-lg-0 d-inline-flex myNav"
+							style={{
+								maxHeight: "100px",
+								maxWidth: "100vw",
+								overflowX: "auto",
+								scrollSnapType: "x",
+								fontWeightL: "500",
+								fontSize: "14px",
+								whiteSpace: "nowrap",
+							}}
 							navbarScroll
 						>
 							<Nav.Link href="#">Editorial</Nav.Link>
@@ -99,7 +106,7 @@ function Header() {
 							<Nav.Link href="#action12">Business & Work</Nav.Link>
 							<Nav.Link href="#action13">Fashion</Nav.Link>
 							<Nav.Link href="#action13"> Film</Nav.Link>
-							{/* <Nav.Link href="#action13">Health & Wellness</Nav.Link>
+							<Nav.Link href="#action13">Health & Wellness</Nav.Link>
 							<Nav.Link href="#action13">People</Nav.Link>
 							<Nav.Link href="#action13">Interiors</Nav.Link>
 							<Nav.Link href="#action13">Street Photography</Nav.Link>
@@ -108,7 +115,7 @@ function Header() {
 							<Nav.Link href="#action13">Travel</Nav.Link>
 							<Nav.Link href="#action13">Arts & Culture </Nav.Link>
 							<Nav.Link href="#action13">History </Nav.Link>
-							<Nav.Link href="#action13">Athletics</Nav.Link> */}
+							<Nav.Link href="#action13">Athletics</Nav.Link>
 						</Nav>
 					</Navbar.Collapse>
 				</Container>

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//udemy.com//Udemy
+METHOD:PUBLISH
+BEGIN:VEVENT
+ORGANIZER;CN="Udemy":mailto:no-reply@udemy.com
+SUMMARY:Time to learn!
+SEQUENCE:0
+DTSTAMP:20221029T132242Z
+DTSTART;TZID=Asia/Calcutta:20221029T220000
+DTEND;TZID=Asia/Calcutta:20221029T221000
+UID:1512234
+RRULE:FREQ=DAILY;
+DESCRIPTION:Master the Coding Interview: Data Structures + Algorithms (https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/learn/)
+
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Time to learn!
+END:VALARM
+END:VEVENT
+END:VCALENDAR
